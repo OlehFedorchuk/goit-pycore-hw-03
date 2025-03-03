@@ -1,4 +1,13 @@
+
 from datetime import datetime, timedelta
+"""
+This script calculates upcoming birthdays for a list of users and determines the appropriate date to send congratulations. If a birthday falls on a weekend, the congratulation date is moved to the following Monday.
+
+
+- Define a list of users with their names and birthdays.
+- Call the `get_upcoming_birthdays` function with the list of users.
+- The function returns a list of users with their names and congratulation dates.
+"""
 
 def get_upcoming_birthdays(users: list) ->list:
     today = datetime.today().date()  
@@ -34,4 +43,4 @@ users = [
 ]
 
 upcoming_birthdays = get_upcoming_birthdays(users)
-print("Список привітань на цьому тижні:", upcoming_birthdays)
+print("List of greetings this week:", upcoming_birthdays)
